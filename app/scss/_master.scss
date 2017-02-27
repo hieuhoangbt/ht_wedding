@@ -1,0 +1,107 @@
+.header {
+  float: left;
+  width: 100%;
+  //border: solid 1px red;
+  position: relative;
+  z-index: 3;
+}
+.content {
+  float: left;
+  width: 100%;
+  //border: solid 1px red;
+  position: relative;
+  z-index: 2;
+  .info-content {
+    float: left;
+    width: 100%;
+  }
+}
+footer.page-footer {
+  float: left;
+  width: 100%;
+  //border: solid 1px red;
+  position: relative;
+  z-index: 1;
+  padding-top: 0rem;
+  background: #000;
+  .footer-copyright {
+    padding: 2rem 0rem;
+    p {
+      color: #fff;
+    }
+  }
+}
+
+.banner-wedding__slider {
+  height: 50rem;
+  width: 100%;
+
+}
+
+/*COUNTUP*/
+.banner-wedding__counter {
+  float: left;
+  width: 100%;
+  clear: both;
+  margin: 3rem auto;
+  .flip-clock-wrapper {
+    max-width: 76rem;
+    width: 100%;
+    margin: 0 auto !important;
+  }
+  .message {
+    font-family: arial;
+    color: #fff;
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin: 2rem 0rem;
+    font-size: 3rem;
+  }
+}
+.flip-clock-divider .flip-clock-label {
+  color: #fff;
+  font-family: cursive;
+  font-size: 2rem;
+
+}
+.flip-clock-wrapper ul {
+  width: 4rem;
+  background: none;
+}
+.flip-clock-wrapper ul li a div.up {
+  display: none !important;
+}
+.flip-clock-wrapper ul li a div {
+  position: static;
+}
+.flip-clock-wrapper ul li a div.down {
+  //display: none;
+}
+.flip-clock-wrapper ul li a div div.inn {
+  height: auto;
+}
+.flip-clock-wrapper ul li a div.down div.inn {
+  color: #555;
+  opacity: 1;
+  font-weight: 100;
+  //font-size: 1.6rem;
+  text-transform: uppercase;
+  font-family: arial;
+  font-size: 60px;
+}
+.flip-clock-wrapper ul li a div div.inn, .flip-clock-dot {
+  background: #fff;
+}
+.flip-clock-divider {
+  margin: 0rem 3rem;
+}
+.flip-clock-divider .flip-clock-label {
+  right: -105px;
+}
+.flip-clock-divider.minutes .flip-clock-label {
+  right: -115px;
+}
+.flip-clock-divider.seconds .flip-clock-label {
+  right: -111px;
+}
