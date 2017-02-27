@@ -1,0 +1,37 @@
+/*default*/
+@import 'mixin';
+@import 'reset';
+@import 'fonts';
+@import 'color';
+@import 'varible';
+@import 'master';
+/*component*/
+@import "component/countup";
+/*page*/
+@import 'home';
+
+
+html {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+}
+
+body {
+    @include rem(font-size, 1.6rem);
+    font-family: sans-serif;
+}
+
+a {
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+button {
+    &:focus {
+        outline: none !important;
+    }
+}
