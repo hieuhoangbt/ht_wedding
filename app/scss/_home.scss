@@ -45,6 +45,10 @@
   font-family: $font_Pacifico;
 }
 
+.big-red {
+  color: #cf000f;
+}
+
 .default {
   font-family: arial;
   color: #000;
@@ -233,7 +237,7 @@
       }
     }
     .caption_text {
-      background: #2c3f52;
+      background: rgba(44, 63, 82, 0.7);
       padding: 2rem;
       position: absolute;
       bottom: 0;
@@ -250,6 +254,7 @@
         color: #fff;
         font-size: 1.8rem;
         font-weight: bold;
+        font-family: $font_Pacifico;
       }
       .text-ders {
         color: #ed4e6e;
@@ -262,6 +267,21 @@
       }
     }
   }
+}
+
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  display: block !important;
+  padding: 1rem;
+  line-height: 1.8rem;
+}
+
+.lb-data .lb-number {
+  display: none !important;
 }
 
 .bg-gray-bold {
@@ -346,6 +366,61 @@
       padding: 0 15px;
       margin-bottom: 30px;
       margin-top: 2rem;
+    }
+  }
+}
+
+.box-introduce {
+  .img-circle-bride {
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+    border-radius: 100%;
+    overflow: hidden;
+    border: solid 1px #CF000F;
+    position: relative;
+    &:before {
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      content: '';
+      position: absolute;
+      top: 0rem;
+      left: 0rem;
+      border: solid 0.4rem #fff;
+      z-index: 9;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .title-model {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0rem;
+    clear: both;
+    span.default {
+      text-transform: uppercase;
+    }
+  }
+  .box-info {
+    .title {
+      color: #555;
+      font-weight: bold;
+      font-size: 3rem;
+      text-align: center;
+      margin: 2rem 0rem;
+    }
+    .ders {
+      font-size: 1.4rem;
+      text-align: center;
+      line-height: 1.3em;
+      margin-bottom: 3rem;
+    }
+    p {
+      margin: 0rem;
     }
   }
 }
