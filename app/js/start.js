@@ -1,4 +1,7 @@
 window.onload = function () {
+    if(typeof THEME_PATH == 'undefined'){
+        var THEME_PATH = '';
+    }
     /*animation wow*/
     var WowAnimate = new WOW({
         boxClass:     'wow',      // default
@@ -10,7 +13,8 @@ window.onload = function () {
     WowAnimate.init();
     /*animation clock*/
     clock = $('.clock').FlipClock({
-        clockFace: 'DailyCounter'
+        clockFace: 'DailyCounter',
+        countdown: true
     });
     /*animation slider*/
     $(".banner-wedding__slider").vegas({
@@ -19,9 +23,9 @@ window.onload = function () {
         delay: 10000,
         timer: false,
         slides: [
-            {src: 'images/banner.jpg', cover: true},
-            {src: 'images/banner2.jpg', cover: true},
-            {src: 'images/banner1.jpg', cover: true}
+            {src: THEME_PATH + 'images/banner.jpg', cover: true},
+            {src: THEME_PATH + 'images/banner2.jpg', cover: true},
+            {src: THEME_PATH + 'images/banner1.jpg', cover: true}
         ],
         transition: ['fade', 'zoomOut', 'swirlLeft'],
         animation: [ 'kenburnsUp', 'kenburnsDown', 'kenburnsLeft', 'kenburnsRight' ]
