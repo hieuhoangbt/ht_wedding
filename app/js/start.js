@@ -1,7 +1,16 @@
 window.onload = function () {
-    if(typeof THEME_PATH == 'undefined'){
-        var THEME_PATH = '';
+    var themePath = '',
+        dslides = [
+            {src: themePath + 'images/banner.jpg', cover: true},
+            {src: themePath + 'images/banner2.jpg', cover: true},
+            {src: themePath + 'images/banner1.jpg', cover: true}
+        ],
+        dcountDown = 0;
+    if(typeof THEME_PATH != 'undefined'){
+        themePath = THEME_PATH;
     }
+    if(typeof slides != 'undefined') dslides = slides;
+    if(typeof countdown != 'undefined') dcountDown = countdown;
     /*animation wow*/
     var WowAnimate = new WOW({
         boxClass:     'wow',      // default
@@ -12,7 +21,7 @@ window.onload = function () {
     });
     WowAnimate.init();
     /*animation clock*/
-    clock = $('.clock').FlipClock({
+    clock = $('.clock').FlipClock(dcountDown, {
         clockFace: 'DailyCounter',
         countdown: true
     });
@@ -22,11 +31,7 @@ window.onload = function () {
         align: 'top',
         delay: 10000,
         timer: false,
-        slides: [
-            {src: THEME_PATH + 'images/banner.jpg', cover: true},
-            {src: THEME_PATH + 'images/banner2.jpg', cover: true},
-            {src: THEME_PATH + 'images/banner1.jpg', cover: true}
-        ],
+        slides: dslides,
         transition: ['fade', 'zoomOut', 'swirlLeft'],
         animation: [ 'kenburnsUp', 'kenburnsDown', 'kenburnsLeft', 'kenburnsRight' ]
 
