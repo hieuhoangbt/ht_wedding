@@ -3,7 +3,7 @@ window.onload = function () {
         dslides = [
             {src: themePath + 'images/banner.jpg', cover: true},
             {src: themePath + 'images/banner2.jpg', cover: true},
-            {src: themePath + 'images/banner1.jpg', cover: true}
+            {src: themePath + 'images/wedding-01.jpg', cover: true}
         ],
         dcountDown = 0;
     if(typeof THEME_PATH != 'undefined'){
@@ -29,7 +29,7 @@ window.onload = function () {
     $(".banner-wedding__slider").vegas({
         cover: false,
         align: 'top',
-        delay: 10000,
+        delay: 3000,
         timer: false,
         slides: dslides,
         transition: ['fade', 'zoomOut', 'swirlLeft'],

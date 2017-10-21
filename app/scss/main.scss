@@ -19,7 +19,7 @@ html {
 
 body {
     @include rem(font-size, 1.6rem);
-    font-family: sans-serif;
+    font-family: $font_BaiSauRegular;
 }
 
 a {

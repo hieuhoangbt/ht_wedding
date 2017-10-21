@@ -1,7 +1,6 @@
 .header {
   float: left;
   width: 100%;
-  //border: solid 1px red;
   position: relative;
   z-index: 3;
 }
@@ -53,7 +52,6 @@ footer.page-footer {
     margin: 0 auto !important;
   }
   .message {
-    font-family: arial;
     color: #fff;
     text-align: center;
     float: left;
@@ -116,4 +114,7 @@ footer.page-footer {
   z-index: 9;
   top: 0;
   left: 0;
+}
+.f12{
+  font-size: 12px;
 }
